@@ -1,140 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naytion's World | Countdown</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;600&family=Allura&display=swap"
-    rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naytion's World | Countdown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Allura&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- decorative sparkles layer -->
-    <div class="decor-layer" aria-hidden="true">
-        <span class="sparkle s1">✦</span>
-        <span class="sparkle s2">✦</span>
-        <span class="sparkle s3">✦</span>
-        <span class="sparkle s4">✦</span>
-        <span class="sparkle s5">✦</span>
+  <div class="decor-layer" aria-hidden="true">
+    <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">✦</span>
+    <span class="sparkle s4">✦</span><span class="sparkle s5">✦</span><span class="sparkle s6">✦</span><span class="sparkle s7">✦</span>
+    <span class="sparkle filled" style="top:60%;left:88%">★</span>
+    <span class="sparkle filled" style="top:25%;left:7%">★</span>
+    <span class="deco-heart h1">♡</span><span class="deco-heart h2">♡</span><span class="deco-heart h3">♡</span>
+    <span class="holo-ribbon ribbon-1"></span><span class="holo-ribbon ribbon-2"></span><span class="holo-ribbon ribbon-3"></span>
+    <span class="butterfly b1">🦋</span><span class="butterfly b2">🦋</span>
+    <span class="bow bow1">🎀</span>
+  </div>
 
-        <span class="butterfly b1">🦋</span>
-        <span class="butterfly b2">🦋</span>
-
-        <span class="bow bow1">🎀</span>
-    </div>
-    
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <nav class="nav">
-
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="nav-inner">
         <a class="brand" href="index.html">
-            <span class="brand__script">Welcome to</span>
-            <span class="brand__name">Naytion's World</span>
+          <span class="brand__script">Welcome to</span>
+          <span class="brand__name">Naytion's World</span>
         </a>
-
-        <button class="nav__toggle" id="navToggle">
-            ☰
-        </button>
-
+        <button class="nav__toggle" id="navToggle" aria-expanded="false">☰</button>
         <div class="nav__menu" id="navMenu">
-            <a class="nav__link" href="index.html">Home</a>
-            <a class="nav__link" href="about.html">About</a>
-            <a class="nav__link" href="world.html">World</a>
-            <a class="nav__link is-active" href="countdown.html">Countdown</a>
-            <a class="nav__link" href="games.html">Games</a>
-            <a class="nav__link fanmail-soon-link" href="#">Fan Mail</a>
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link" href="about.html">About</a>
+          <a class="nav__link" href="world.html">World</a>
+          <a class="nav__link is-active" href="countdown.html">Countdown</a>
+          <a class="nav__link" href="games.html">Games</a>
+          <a class="nav__link fanmail-soon-link" href="#">Fan Mail</a>
         </div>
+      </div>
+    </div>
+  </header>
 
-        </nav>
-    </header>
-
-    <!-- Main content -->
-    <main>
+  <main>
     <section class="chapters countdown-page">
       <div class="container">
-
         <div class="section-head countdown-head">
-          <p class="kicker">Chapter Two</p>
+          <p class="kicker">✦ Chapter Two</p>
           <h1 class="section-title">Waiting for F. I. G.</h1>
-          <p class="section-subtitle">
-            A little countdown while we wait for F. I. G. to arrive.
-          </p>
+          <p class="section-subtitle">A little countdown while we wait for F. I. G. to arrive.</p>
         </div>
 
         <div class="countdown-wrap">
-
           <div class="countdown-grid">
+
             <div class="countdown-box">
-              <span id="days" class="countdown-number">00</span>
-              <span class="countdown-label">Days</span>
+              <div class="countdown-box__bar">
+                <span class="countdown-box__bar-icon">📅</span>
+                <div class="countdown-box__bar-btns">
+                  <button class="countdown-box__bar-btn">─</button>
+                  <button class="countdown-box__bar-btn">□</button>
+                  <button class="countdown-box__bar-btn">✕</button>
+                </div>
+              </div>
+              <div class="countdown-box__inner">
+                <span class="countdown-number" id="days">00</span>
+                <span class="countdown-label">Days</span>
+              </div>
             </div>
 
             <div class="countdown-box">
-              <span id="hours" class="countdown-number">00</span>
-              <span class="countdown-label">Hours</span>
+              <div class="countdown-box__bar">
+                <span class="countdown-box__bar-icon">🕐</span>
+                <div class="countdown-box__bar-btns">
+                  <button class="countdown-box__bar-btn">─</button>
+                  <button class="countdown-box__bar-btn">□</button>
+                  <button class="countdown-box__bar-btn">✕</button>
+                </div>
+              </div>
+              <div class="countdown-box__inner">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">Hours</span>
+              </div>
             </div>
 
             <div class="countdown-box">
-              <span id="minutes" class="countdown-number">00</span>
-              <span class="countdown-label">Minutes</span>
+              <div class="countdown-box__bar">
+                <span class="countdown-box__bar-icon">⏱️</span>
+                <div class="countdown-box__bar-btns">
+                  <button class="countdown-box__bar-btn">─</button>
+                  <button class="countdown-box__bar-btn">□</button>
+                  <button class="countdown-box__bar-btn">✕</button>
+                </div>
+              </div>
+              <div class="countdown-box__inner">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">Minutes</span>
+              </div>
             </div>
 
             <div class="countdown-box">
-              <span id="seconds" class="countdown-number">00</span>
-              <span class="countdown-label">Seconds</span>
+              <div class="countdown-box__bar">
+                <span class="countdown-box__bar-icon">✨</span>
+                <div class="countdown-box__bar-btns">
+                  <button class="countdown-box__bar-btn">─</button>
+                  <button class="countdown-box__bar-btn">□</button>
+                  <button class="countdown-box__bar-btn">✕</button>
+                </div>
+              </div>
+              <div class="countdown-box__inner">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">Seconds</span>
+              </div>
             </div>
+
           </div>
 
           <div class="countdown-note">
             <p class="countdown-note__script">until we get F. I. G. ♡♡...</p>
-            <p class="countdown-note__text" id="countdownMessage">
-              Counting down the days to March 20 ✨
-            </p>
+            <p class="countdown-note__text" id="countdownMessage">Counting down the days to March 20 ✨</p>
           </div>
-
         </div>
-
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="footer__text">
-        ✨ Fan-made, just for fun. Created with ♡ for my fellow Naomi Scott fans!
-      </p>
+      <p class="footer__text">✦ fan-made with ♡ for my fellow naomi scott fans ✦</p>
     </div>
   </footer>
 
-  <!-- Fan Mail Coming Soon Modal -->
   <div class="modal-overlay" id="fanmailSoonModal" aria-hidden="true">
     <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="fanmailModalTitle">
-      <button class="modal-close" id="closeFanmailSoon" aria-label="Close modal">✕</button>
-
-      <p class="modal-kicker">Little note</p>
-      <h2 class="modal-title" id="fanmailModalTitle">Fan Mail is coming soon</h2>
-      <p class="modal-text">
-        This page isn’t available just yet ♡  
-        It’ll be arriving soon as part of this little story world.
-      </p>
-
-      <button class="btn btn--primary modal-button" type="button" id="closeFanmailSoonBtn">
-        Okay ♡
-      </button>
+      <div class="modal-winbar">
+        <span class="modal-winbar-icon">💌</span>
+        <span class="modal-winbar-title">fan_mail.exe — Naytion's World</span>
+        <div class="modal-winbar-btns">
+          <button class="modal-winbar-btn">─</button><button class="modal-winbar-btn">□</button>
+          <button class="modal-winbar-btn modal-winbar-btn--close" id="closeFanmailSoon">✕</button>
+        </div>
+      </div>
+      <button class="modal-close" id="closeFanmailSoonAlt" aria-label="Close" style="opacity:0;pointer-events:none">✕</button>
+      <div class="modal-body">
+        <p class="modal-kicker">Little note</p>
+        <h2 class="modal-title" id="fanmailModalTitle">Fan Mail is coming soon</h2>
+        <p class="modal-text">This page isn't available just yet ♡<br>It'll be arriving soon as part of this little story world.</p>
+        <button class="btn btn--primary modal-button" type="button" id="closeFanmailSoonBtn">Okay ♡</button>
+      </div>
     </div>
   </div>
 
-  <!-- JS -->
   <script src="script.js"></script>
-
+  <script>
+    document.getElementById('closeFanmailSoon')?.addEventListener('click', function() {
+      var m = document.getElementById('fanmailSoonModal');
+      m.classList.remove('is-open'); m.setAttribute('aria-hidden','true');
+    });
+  </script>
 </body>
 </html>

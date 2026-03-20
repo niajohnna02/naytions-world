@@ -1,173 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naytion's World | Games</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;600&family=Allura&display=swap"
-    rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naytion's World | Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Allura&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- decorative background layer -->
-    <div class="games-decor" aria-hidden="true">
-        <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-1">
-        <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-2">
-        <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-3">
-        <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-4">
 
-        <img src="assets/turtle.png" alt="" class="decor-img turtle turtle-1">
-        <img src="assets/turtle.png" alt="" class="decor-img turtle turtle-2">
-        <img src="assets/turtle.png" alt="" class="decor-img turtle turtle-3">
-        <img src="assets/turtle.png" alt="" class="decor-img turtle turtle-4">
+  <div class="games-decor" aria-hidden="true">
+    <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-1">
+    <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-2">
+    <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-3">
+    <img src="assets/pink-cherry.png" alt="" class="decor-img cherry cherry-4">
+    <img src="assets/turtle.png"      alt="" class="decor-img turtle turtle-1">
+    <img src="assets/turtle.png"      alt="" class="decor-img turtle turtle-2">
+    <img src="assets/turtle.png"      alt="" class="decor-img turtle turtle-3">
+    <img src="assets/turtle.png"      alt="" class="decor-img turtle turtle-4">
+    <img src="assets/butterfly.png"   alt="" class="decor-img butterfly-img butterfly-1">
+    <img src="assets/butterfly.png"   alt="" class="decor-img butterfly-img butterfly-2">
+    <img src="assets/butterfly.png"   alt="" class="decor-img butterfly-img butterfly-3">
+    <img src="assets/butterfly.png"   alt="" class="decor-img butterfly-img butterfly-4">
+    <!-- Neon star outlines layered on top of assets -->
+    <span class="sparkle s1">✦</span>
+    <span class="sparkle s2">✦</span>
+    <span class="sparkle s3">✦</span>
+    <span class="sparkle s4">✦</span>
+    <span class="sparkle filled" style="top:8%;left:56%;font-size:20px">★</span>
+    <span class="sparkle filled" style="top:80%;left:70%;font-size:16px">★</span>
+    <!-- Holo ribbons -->
+    <span class="holo-ribbon ribbon-1"></span>
+    <span class="holo-ribbon ribbon-2"></span>
+  </div>
 
-        <img src="assets/butterfly.png" alt="" class="decor-img butterfly-img butterfly-1">
-        <img src="assets/butterfly.png" alt="" class="decor-img butterfly-img butterfly-2">
-        <img src="assets/butterfly.png" alt="" class="decor-img butterfly-img butterfly-3">
-        <img src="assets/butterfly.png" alt="" class="decor-img butterfly-img butterfly-4">
-
-        <span class="sparkle s1">✦</span>
-        <span class="sparkle s2">✦</span>
-        <span class="sparkle s3">✦</span>
-        <span class="sparkle s4">✦</span>
-    </div>
-
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <nav class="nav">
-
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="nav-inner">
         <a class="brand" href="index.html">
-            <span class="brand__script">Welcome to</span>
-            <span class="brand__name">Naytion's World</span>
+          <span class="brand__script">Welcome to</span>
+          <span class="brand__name">Naytion's World</span>
         </a>
-
-        <button class="nav__toggle" id="navToggle">
-            ☰
-        </button>
-
+        <button class="nav__toggle" id="navToggle" aria-expanded="false">☰</button>
         <div class="nav__menu" id="navMenu">
-            <a class="nav__link" href="index.html">Home</a>
-            <a class="nav__link" href="about.html">About</a>
-            <a class="nav__link" href="world.html">World</a>
-            <a class="nav__link" href="countdown.html">Countdown</a>
-            <a class="nav__link is-active" href="games.html">Games</a>
-            <a class="nav__link fanmail-soon-link" href="#">Fan Mail</a>
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link" href="about.html">About</a>
+          <a class="nav__link" href="world.html">World</a>
+          <a class="nav__link" href="countdown.html">Countdown</a>
+          <a class="nav__link is-active" href="games.html">Games</a>
+          <a class="nav__link fanmail-soon-link" href="#">Fan Mail</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="chapters games-page">
+      <div class="container">
+        <div class="section-head games-head">
+          <p class="kicker">✦ Chapter Three</p>
+          <h1 class="section-title">Little Games Along the Way</h1>
+          <p class="section-subtitle">A tiny arcade of playful story-inspired games to enjoy while waiting for the music.</p>
         </div>
 
-        </nav>
-    </header>
+        <div class="game-card-grid">
 
-    <!-- Main content -->
-    <main>
-        <section class="chapters games-page">
-            <div class="container">
-
-                <div class="section-head games-head">
-                    <p class="kicker">Chapter Three</p>
-                    <h1 class="section-title">Little Games Along the Way</h1>
-                    <p class="section-subtitle">
-                        A tiny arcade of playful story-inspired games to enjoy while waiting for the music.
-                    </p>
-                </div>
-
-                <div class="game-card-grid">
-
-                    <!-- Cherry Crush -->
-                    <article class="game-card">
-                        <p class="card__kicker">Game One</p>
-                        <h3 class="card__title">Cherry Crush</h3>
-                        <p class="card__text">
-                        A sweet cherry-inspired game with playful energy and a dreamy vibe.
-                        </p>
-                        <a class="card__link" href="https://niajohnna02.github.io/cherry-crush/welcome.html" target="_blank">
-                        Play game →
-                        </a>
-                    </article>
-
-                    <!-- Little Tutu's Love Quest -->
-                    <article class="game-card">
-                        <p class="card__kicker">Game Two</p>
-                        <h3 class="card__title">Little Tutu’s Love Quest</h3>
-                        <p class="card__text">
-                        A soft little journey inspired by love, longing, and gentle adventure.
-                        </p>
-                        <a class="card__link" href="https://niajohnna02.github.io/little-tutus-love-quest/" target="_blank">
-                        Play game →
-                        </a>
-                    </article>
-
-                    <!-- Catch the Notes -->
-                    <article class="game-card">
-                        <p class="card__kicker">Game Three</p>
-                        <h3 class="card__title">Catch the Notes</h3>
-                        <p class="card__text">
-                        A music-themed mini game where you catch the notes as they fall.
-                        </p>
-                        <button class="card__link coming-soon-btn" type="button" id="openComingSoon">
-                            Play game →
-                        </button>
-                    </article>
-
-                </div>
-
+          <article class="game-card">
+            <div class="card__winbar">
+              <span class="card__winbar-icon">🍒</span>
+              <span class="card__winbar-title">cherry_crush.exe</span>
+              <div class="card__winbar-btns">
+                <button class="card__winbar-btn">─</button><button class="card__winbar-btn">□</button><button class="card__winbar-btn">✕</button>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="game-card__body">
+              <p class="card__kicker">Game One</p>
+              <h3 class="card__title">Cherry Crush</h3>
+              <p class="card__text">A sweet cherry-inspired game with playful energy and a dreamy vibe.</p>
+              <a class="card__link" href="https://niajohnna02.github.io/cherry-crush/welcome.html" target="_blank">Play game →</a>
+            </div>
+          </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer__inner">
-        <p class="footer__text">
-            ✨ Fan-made, just for fun. Created with ♡ for my fellow Naomi Scott fans!
-        </p>
+          <article class="game-card">
+            <div class="card__winbar">
+              <span class="card__winbar-icon">🐢</span>
+              <span class="card__winbar-title">little_tutu.exe</span>
+              <div class="card__winbar-btns">
+                <button class="card__winbar-btn">─</button><button class="card__winbar-btn">□</button><button class="card__winbar-btn">✕</button>
+              </div>
+            </div>
+            <div class="game-card__body">
+              <p class="card__kicker">Game Two</p>
+              <h3 class="card__title">Little Tutu's Love Quest</h3>
+              <p class="card__text">A soft little journey inspired by love, longing, and gentle adventure.</p>
+              <a class="card__link" href="https://niajohnna02.github.io/little-tutus-love-quest/" target="_blank">Play game →</a>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="card__winbar">
+              <span class="card__winbar-icon">🎵</span>
+              <span class="card__winbar-title">catch_notes.exe</span>
+              <div class="card__winbar-btns">
+                <button class="card__winbar-btn">─</button><button class="card__winbar-btn">□</button><button class="card__winbar-btn">✕</button>
+              </div>
+            </div>
+            <div class="game-card__body">
+              <p class="card__kicker">Game Three</p>
+              <h3 class="card__title">Catch the Notes</h3>
+              <p class="card__text">A music-themed mini game where you catch the notes as they fall.</p>
+              <button class="card__link coming-soon-btn" type="button" id="openComingSoon">Play game →</button>
+            </div>
+          </article>
+
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <!-- Coming Soon Modal -->
-    <div class="modal-overlay" id="comingSoonModal" aria-hidden="true">
-        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-            <button class="modal-close" id="closeComingSoon" aria-label="Close modal">✕</button>
-
-            <p class="modal-kicker">Little note</p>
-            <h2 class="modal-title" id="modalTitle">Game coming soon</h2>
-            <p class="modal-text">
-            Catch the Notes is still being made ♡  
-            Come back soon for a cute music-filled mini game.
-            </p>
-
-            <button class="btn btn--primary modal-button" type="button" id="closeComingSoonBtn">
-            Okay ♡
-            </button>
-        </div>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">✦ fan-made with ♡ for my fellow naomi scott fans ✦</p>
     </div>
+  </footer>
 
-    <!-- Fan Mail Coming Soon Modal -->
-    <div class="modal-overlay" id="fanmailSoonModal" aria-hidden="true">
-        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="fanmailModalTitle">
-            <button class="modal-close" id="closeFanmailSoon" aria-label="Close modal">✕</button>
-
-            <p class="modal-kicker">Little note</p>
-            <h2 class="modal-title" id="fanmailModalTitle">Fan Mail is coming soon</h2>
-            <p class="modal-text">
-            This page isn’t available just yet ♡  
-            It’ll be arriving soon as part of this little story world.
-            </p>
-
-            <button class="btn btn--primary modal-button" type="button" id="closeFanmailSoonBtn">
-            Okay ♡
-            </button>
+  <!-- Coming Soon Modal -->
+  <div class="modal-overlay" id="comingSoonModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-winbar">
+        <span class="modal-winbar-icon">🎵</span>
+        <span class="modal-winbar-title">catch_notes.exe — Naytion's World</span>
+        <div class="modal-winbar-btns">
+          <button class="modal-winbar-btn">─</button><button class="modal-winbar-btn">□</button>
+          <button class="modal-winbar-btn modal-winbar-btn--close" id="closeComingSoonWinbar">✕</button>
         </div>
+      </div>
+      <button class="modal-close" id="closeComingSoon" aria-label="Close" style="opacity:0;pointer-events:none">✕</button>
+      <div class="modal-body">
+        <p class="modal-kicker">Little note</p>
+        <h2 class="modal-title" id="modalTitle">Game coming soon</h2>
+        <p class="modal-text">Catch the Notes is still being made ♡<br>Come back soon for a cute music-filled mini game.</p>
+        <button class="btn btn--primary modal-button" type="button" id="closeComingSoonBtn">Okay ♡</button>
+      </div>
     </div>
+  </div>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>    
+  <!-- Fan Mail Modal -->
+  <div class="modal-overlay" id="fanmailSoonModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="fanmailModalTitle">
+      <div class="modal-winbar">
+        <span class="modal-winbar-icon">💌</span>
+        <span class="modal-winbar-title">fan_mail.exe — Naytion's World</span>
+        <div class="modal-winbar-btns">
+          <button class="modal-winbar-btn">─</button><button class="modal-winbar-btn">□</button>
+          <button class="modal-winbar-btn modal-winbar-btn--close" id="closeFanmailSoon">✕</button>
+        </div>
+      </div>
+      <button class="modal-close" id="closeFanmailSoonAlt" aria-label="Close" style="opacity:0;pointer-events:none">✕</button>
+      <div class="modal-body">
+        <p class="modal-kicker">Little note</p>
+        <h2 class="modal-title" id="fanmailModalTitle">Fan Mail is coming soon</h2>
+        <p class="modal-text">This page isn't available just yet ♡<br>It'll be arriving soon as part of this little story world.</p>
+        <button class="btn btn--primary modal-button" type="button" id="closeFanmailSoonBtn">Okay ♡</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function closeModal(id) {
+      var m = document.getElementById(id);
+      if (m) { m.classList.remove('is-open'); m.setAttribute('aria-hidden','true'); }
+    }
+    document.getElementById('closeComingSoonWinbar')?.addEventListener('click', function() { closeModal('comingSoonModal'); });
+    document.getElementById('closeFanmailSoon')?.addEventListener('click', function() { closeModal('fanmailSoonModal'); });
+  </script>
+</body>
 </html>

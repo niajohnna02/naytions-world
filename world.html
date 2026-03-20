@@ -1,144 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naytion's World | World</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;600&family=Allura&display=swap"
-    rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naytion's World | World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Allura&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- decorative sparkles layer -->
-    <div class="decor-layer" aria-hidden="true">
-        <span class="sparkle s1">✦</span>
-        <span class="sparkle s2">✦</span>
-        <span class="sparkle s3">✦</span>
-        <span class="sparkle s4">✦</span>
-        <span class="sparkle s5">✦</span>
+  <div class="decor-layer" aria-hidden="true">
+    <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">✦</span>
+    <span class="sparkle s4">✦</span><span class="sparkle s5">✦</span><span class="sparkle s6">✦</span><span class="sparkle s7">✦</span>
+    <span class="sparkle filled" style="top:60%;left:88%">★</span>
+    <span class="sparkle filled" style="top:25%;left:7%">★</span>
+    <span class="deco-heart h1">♡</span><span class="deco-heart h2">♡</span><span class="deco-heart h3">♡</span>
+    <span class="holo-ribbon ribbon-1"></span><span class="holo-ribbon ribbon-2"></span><span class="holo-ribbon ribbon-3"></span>
+    <span class="butterfly b1">🦋</span><span class="butterfly b2">🦋</span>
+    <span class="bow bow1">🎀</span>
+  </div>
 
-        <span class="butterfly b1">🦋</span>
-        <span class="butterfly b2">🦋</span>
-
-        <span class="bow bow1">🎀</span>
-    </div>
-
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <nav class="nav">
-
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="nav-inner">
         <a class="brand" href="index.html">
-            <span class="brand__script">Welcome to</span>
-            <span class="brand__name">Naytion's World</span>
+          <span class="brand__script">Welcome to</span>
+          <span class="brand__name">Naytion's World</span>
         </a>
-
-        <button class="nav__toggle" id="navToggle">
-            ☰
-        </button>
-
+        <button class="nav__toggle" id="navToggle" aria-expanded="false">☰</button>
         <div class="nav__menu" id="navMenu">
-            <a class="nav__link" href="index.html">Home</a>
-            <a class="nav__link" href="about.html">About</a>
-            <a class="nav__link is-active" href="world.html">World</a>
-            <a class="nav__link" href="countdown.html">Countdown</a>
-            <a class="nav__link" href="games.html">Games</a>
-            <a class="nav__link fanmail-soon-link" href="#">Fan Mail</a>
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link" href="about.html">About</a>
+          <a class="nav__link is-active" href="world.html">World</a>
+          <a class="nav__link" href="countdown.html">Countdown</a>
+          <a class="nav__link" href="games.html">Games</a>
+          <a class="nav__link fanmail-soon-link" href="#">Fan Mail</a>
         </div>
-
-        </nav>
-    </header>
-
-    <!-- Main content -->
-    <main>
-
-        <section class="chapters">
-        <div class="container">
-
-            <div class="section-head">
-            <p class="kicker">Chapter Select</p>
-            <h1 class="section-title">Welcome to the World</h1>
-            <p class="section-subtitle">
-                Wander through the story, check the countdown, explore the games, or leave a little note.
-            </p>
-            </div>
-
-            <div class="card-grid">
-
-            <!-- Countdown card -->
-            <article class="card">
-                <p class="card__kicker">Chapter Two</p>
-                <h3 class="card__title">Waiting for the Music</h3>
-                <p class="card__text">
-                Visit the countdown page and keep track of how much longer until the music arrives.
-                </p>
-                <a class="card__link" href="countdown.html">Open countdown →</a>
-            </article>
-
-            <!-- Games card -->
-            <article class="card">
-                <p class="card__kicker">Chapter Three</p>
-                <h3 class="card__title">Little Games Along the Way</h3>
-                <p class="card__text">
-                Play sweet little games inspired by songs and story moments inside the world.
-                </p>
-                <a class="card__link" href="games.html">Enter the arcade →</a>
-            </article>
-
-            <!-- Fan mail card -->
-            <article class="card">
-                <p class="card__kicker">Chapter Four</p>
-                <h3 class="card__title">Letters From Fans</h3>
-                <p class="card__text">
-                Write a note, leave a message, and create something heartfelt and playful.
-                </p>
-                <a class="card__link" href="fanmail.html">Write a letter →</a>
-            </article>
-
-            </div>
-
-        </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer__inner">
-        <p class="footer__text">
-            ✨ Fan-made, just for fun. Created with ♡ for my fellow Naomi Scott fans!
-        </p>
-        </div>
-    </footer>
-
-    <!-- Fan Mail Coming Soon Modal -->
-    <div class="modal-overlay" id="fanmailSoonModal" aria-hidden="true">
-      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="fanmailModalTitle">
-        <button class="modal-close" id="closeFanmailSoon" aria-label="Close modal">✕</button>
-
-        <p class="modal-kicker">Little note</p>
-        <h2 class="modal-title" id="fanmailModalTitle">Fan Mail is coming soon</h2>
-        <p class="modal-text">
-          This page isn’t available just yet ♡  
-          It’ll be arriving soon as part of this little story world.
-        </p>
-
-        <button class="btn btn--primary modal-button" type="button" id="closeFanmailSoonBtn">
-          Okay ♡
-        </button>
       </div>
     </div>
+  </header>
 
+  <main>
+    <section class="chapters">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">✦ Chapter Select</p>
+          <h1 class="section-title">Welcome to the World</h1>
+          <p class="section-subtitle">Wander through the story, check the countdown, explore the games, or leave a little note.</p>
+        </div>
 
-    <!-- JS -->
-    <script src="script.js"></script>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__winbar">
+              <span class="card__winbar-icon">⏳</span>
+              <span class="card__winbar-title">countdown.exe</span>
+              <div class="card__winbar-btns">
+                <button class="card__winbar-btn">─</button><button class="card__winbar-btn">□</button><button class="card__winbar-btn">✕</button>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__kicker">Chapter Two</p>
+              <h3 class="card__title">Waiting for the Music</h3>
+              <p class="card__text">Visit the countdown page and keep track of how much longer until the music arrives.</p>
+              <a class="card__link" href="countdown.html">Open countdown →</a>
+            </div>
+          </article>
 
+          <article class="card">
+            <div class="card__winbar">
+              <span class="card__winbar-icon">🎮</span>
+              <span class="card__winbar-title">games.exe</span>
+              <div class="card__winbar-btns">
+                <button class="card__winbar-btn">─</button><button class="card__winbar-btn">□</button><button class="card__winbar-btn">✕</button>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__kicker">Chapter Three</p>
+              <h3 class="card__title">Little Games Along the Way</h3>
+              <p class="card__text">Play sweet little games inspired by songs and story moments inside the world.</p>
+              <a class="card__link" href="games.html">Enter the arcade →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__winbar">
+              <span class="card__winbar-icon">💌</span>
+              <span class="card__winbar-title">fanmail.exe</span>
+              <div class="card__winbar-btns">
+                <button class="card__winbar-btn">─</button><button class="card__winbar-btn">□</button><button class="card__winbar-btn">✕</button>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__kicker">Chapter Four</p>
+              <h3 class="card__title">Letters From Fans</h3>
+              <p class="card__text">Write a note, leave a message, and create something heartfelt and playful.</p>
+              <a class="card__link" href="fanmail.html">Write a letter →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">✦ fan-made with ♡ for my fellow naomi scott fans ✦</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="fanmailSoonModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="fanmailModalTitle">
+      <div class="modal-winbar">
+        <span class="modal-winbar-icon">💌</span>
+        <span class="modal-winbar-title">fan_mail.exe — Naytion's World</span>
+        <div class="modal-winbar-btns">
+          <button class="modal-winbar-btn">─</button><button class="modal-winbar-btn">□</button>
+          <button class="modal-winbar-btn modal-winbar-btn--close" id="closeFanmailSoon">✕</button>
+        </div>
+      </div>
+      <button class="modal-close" id="closeFanmailSoonAlt" aria-label="Close" style="opacity:0;pointer-events:none">✕</button>
+      <div class="modal-body">
+        <p class="modal-kicker">Little note</p>
+        <h2 class="modal-title" id="fanmailModalTitle">Fan Mail is coming soon</h2>
+        <p class="modal-text">This page isn't available just yet ♡<br>It'll be arriving soon as part of this little story world.</p>
+        <button class="btn btn--primary modal-button" type="button" id="closeFanmailSoonBtn">Okay ♡</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('closeFanmailSoon')?.addEventListener('click', function() {
+      var m = document.getElementById('fanmailSoonModal');
+      m.classList.remove('is-open'); m.setAttribute('aria-hidden','true');
+    });
+  </script>
 </body>
 </html>
